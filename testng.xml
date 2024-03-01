@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Practise Project">
+	<test thread-count="5" name="Test_To_Do_1">
+		<classes>
+			<class name="C1_Test1" />
+			<class name="C1_Test2" />
+		</classes>
+	</test>
+	<test name="Test_To_Do_2">
+		<classes>
+			<class name="C2_Test1">
+				<methods>
+					<include name="Mobile.*"/>
+				</methods>
+			</class>
+			<class name="C2_Test2">
+				<methods>
+					<exclude name="AppLoan"/>
+					<exclude name="WebLoan"/>
+				</methods>
+			</class>
+		</classes>
+	</test>
+</suite> <!-- Suite -->
